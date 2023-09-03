@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(./assets/Fuentes/River\ Plate\ 2023.otf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a{
+    color: white;
+    font-weight: 700;
+}
+
+a:hover{
+    color: #b3b3b3;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding-top: 100px;
+}
+
+
+header{
+    background-color: #191919;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    height: 45px;
+}
+
+
+.Calendario{
+    display: table;
+    margin: 0 auto;
+}
+
+
+.Escudo{
+    max-width: 120px;
+    padding-bottom: 5px;
+}
+
+.Tarjeta{
+    background-color: #e01b13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 280px;
+    max-width: 470px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.Equipos{
+    display: flex;
+    flex-direction: row;
+    width: 430px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.Local , .Visitante{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1{
+    text-align: center;
+}
+
+h1{
+    font-family: 'Lato';
+    color: black;
+}
+
+header h1{
+    color: white;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h4{
+    font-size: 24px;
+    padding-top: 5px;
+}
+
+h5{
+    color: white;
+    font-size: 16px;
+    text-shadow: 1px 1px 0 black;
+}
+
+
+.FilaSeptiembre,.FilaOctubre,.FilaNoviembre,.FilaAgosto{
+    display: grid;
+    grid-template-columns: repeat(3,470px);
+    justify-content: center;
+    row-gap: 25px;
+    column-gap: 25px;
+    margin: 30px 0;
+}
+
+.footer{
+    background-color: #191919;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.anclas{
+    display: flex;
+    max-width: fit-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsors{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 17px;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 15px;
+    padding: 0;
+}
+
+i{
+    font-size: 80px;
+    color: #b3b3b3;
+}
+
+.FB:hover{
+    color: #3b5998;
+}
+
+.LN:hover{
+    color: #0e76a8;
+}
+
+.TW:hover{
+    color: #00acee;
+}
+
+.IG:hover{
+    color: #E1306C;
+}
+
+.YT:hover{
+    color: #c4302b;
+}
+
+@media (max-width:1490px){
+    .FilaSeptiembre,.FilaNoviembre,.FilaOctubre,.FilaAgosto{
+        grid-template-columns: repeat(2,minmax(470px,670px));
+        margin: 10px;
+        column-gap: 50px;
+    }
+
+    h2{
+        margin-left: 10px;
+    }
+
+    .Tarjeta{
+        max-width: 100%;
+    }
+
+    .Equipos{
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:1010px){
+    .FilaSeptiembre,.FilaNoviembre,.FilaOctubre,.FilaAgosto{
+        grid-template-columns: repeat(1,minmax(460px,670px));
+        margin: 10px;
+    }
+}
+
+@media (max-width:650px){
+    .footer{
+        justify-content: space-around;
+    }
+
+    i{
+        font-size: 60px;
+    }
+
+    .sponsors a img{
+        width: 50px;
+    }
+
+    .logofooter{
+        width: 80px;
+    }
+}
+
+@media (max-width:490px){
+    .FilaSeptiembre,.FilaNoviembre,.FilaOctubre,.FilaAgosto{
+        grid-template-columns: repeat(1,minmax(270px,470px));
+        margin: 10px;
+    }
+
+    .footer{
+        row-gap: 30px;
+        column-gap: 8px;
+    }
+
+    .Escudo{
+        max-width: 90px;
+    }
+
+    .Tarjeta{
+        height: 220px;
+    }
+
+    .Equipos{
+        width: 380px;
+        justify-content: space-evenly;
+        
+    }
+
+    h3{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:450px) {
+    header{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    main h1{
+        padding-top: 20px;
+    }
+
+    nav{
+        padding: 10px;
+    }
+}
+
+@media (max-width:430px){
+    .footer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:380px){
+    .Equipos{
+        width: 310px;
+    }
+    ul, .sponsors{
+        gap: 8px;
+    }
+}
